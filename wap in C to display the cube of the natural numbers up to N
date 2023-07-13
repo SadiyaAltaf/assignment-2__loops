@@ -1,11 +1,9 @@
-#include <stdio.h>
-void main()
- {
-    int i,ctr;
-    printf("Input number of terms : ");
-    scanf("%d", &ctr);
-    for(i=1;i<=ctr;i++)
-    {
-	 printf("Number is : %d and cube of the %d is :%d \n",i,i, (i*i*i));     
-    }
- }
+#include<stdio.h>
+int main()
+{
+    int n,sum;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    sum=(n*n)*((n+1)*(n+1))/4;
+    printf("sum of square of %d natural numbers=%d",n,sum);
+}
