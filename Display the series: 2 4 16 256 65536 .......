@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    unsigned long long term = 2; // Starting term
+    unsigned int count; // Number of terms to display
+
+    printf("Enter the number of terms to display: ");
+    scanf("%u", &count);
+
+    printf("Series: ");
+    for (unsigned int i = 0; i < count; i++) {
+        printf("%llu ", term);
+        term *= term; // Square the term for the next iteration
+    }
+
+    return 0;
+}
