@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    unsigned int term = 2; // Starting term
+    unsigned int count; // Number of terms to display
+
+    printf("Enter the number of terms to display: ");
+    scanf("%u", &count);
+
+    printf("Series: ");
+    for (unsigned int i = 0; i < count; i++) {
+        printf("%u ", term);
+        term *= 2; // Multiply the term by 2 for the next iteration
+    }
+
+    return 0;
+}
